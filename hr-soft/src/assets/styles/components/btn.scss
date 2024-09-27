@@ -1,0 +1,20 @@
+@layer utilities {
+  .btn-style {
+    @apply rounded-4 text-nowrap cursor-pointer p-2 transition duration-75 justify-center items-center inline-flex capitalize hover:opacity-80  disabled:opacity-50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  }
+  .btn{
+    &_primary{
+      background-color: var(--dynamic-color)!important;
+      @apply btn-style;
+    };
+    &_secondary{
+      background-color: #6b7280!important;
+      @apply btn-style;
+    }
+    &_delete{
+      background-color: #EB7171 !important;
+      @apply btn-style;
+    }
+  }
+}

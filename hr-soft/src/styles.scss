@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "assets/styles/fonts";
+@import "assets/styles/components/merged-components-styles";
+@import "assets/styles/utilities";
+
+body{
+  @apply font-neueNormal;
+  //@apply bg-gray-d3
+}
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--dynamic-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0d516c;
+}
+
+:root {
+  --dynamic-color: #3498db;
+}
+button{
+  color: white;
+  font-family: neueBold,sans-serif;
+}
+
+
+
+
