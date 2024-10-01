@@ -9,13 +9,22 @@
     }
 
   }
-  .input-field{
-    border: 1px solid ;
+
+  input:focus {
+   //background-color: var(--dynamic-color)!important;
+    background-color: white !important;
+    color: black!important;
+    font-family: neueMedium, sans-serif;
+  };
+
+  .input-field {
+    border: 1px solid;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06) !important;
     @apply h-44 rounded-4 overflow-hidden  border-gray-97 border-opacity-50 bg-none;
     &-date {
       @apply flex justify-between items-center;
       padding-right: 16px;
+
       &:after {
         content: "";
         display: flex;
@@ -26,20 +35,25 @@
         background-size: 20px;
       }
     }
-    &-password{
+
+    &-password {
       @apply flex justify-between items-center;
       padding-right: 16px;
+
       button {
         flex-basis: 24px;
+
         svg.hide {
           @apply hidden;
         }
       }
     }
+
     &-validated {
       &_error {
         @apply border-error flex justify-between items-center;
         padding-right: 16px;
+
         &:after {
           content: "";
           display: flex;

@@ -1,25 +1,32 @@
+<app-header/>
 
-
-
-  <app-header/>
-  <div class="px-5 h-[100vh] w-full text-center ">
-    <router-outlet/>
-    <h1>please choose color for your company</h1>
-    <input class="!h-[50px] !w-[100px]" #color type="color" (change)="setDinamycColor(color.value)">
-    @if (showLoader) {
-      <app-loader/>
+<div class=" pr-5 h-[100vh] w-full text-center  ">
+  <div class="flex justify-between relative">
+    @if (!activeUrl()?.includes('login')) {
+      <div class="absolute left-0 " >
+        <app-side-bar [isScrolledDown]="scrollPosition"/>
+      </div>
     }
+    <div class="absolute left-[18%] right-0">
+      <router-outlet/>
+    </div>
   </div>
+  @if (showLoader) {
+    <app-loader/>
+  }
+</div>
 
 
 
 
-
-
-
-
-
-
+<!--    <div >-->
+<!--      <app-side-bar/>-->
+<!--    </div>-->
+<!--    <div >-->
+<!--      <router-outlet/>-->
+<!--    </div>-->
+<!--    <h1>please choose color for your company</h1>-->
+<!--    <input class="!h-[50px] !w-[100px]" #color type="color" (change)="setDinamycColor(color.value)">-->
 
 <!--  <div class="flex justify-center">-->
 <!--    <h1>buttons</h1>-->

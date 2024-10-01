@@ -1,0 +1,81 @@
+.logoGrowingEffect{
+  -moz-animation: growLogo 3s; /* Firefox */
+  -webkit-animation: growLogo 3s; /* Safari and Chrome */
+  -ms-animation: growLogo 3s; /* IE10 */
+  -o-animation: growLogo 3s; /* Opera */
+  animation: growLogo 3s;
+}
+@keyframes growLogo {
+  0% {
+    opacity: 0
+  }
+  100% {
+    //transform: scale(1.1,1.1);
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes growLogo { /* Chrome, Safari */
+  0% {
+    opacity: 0
+  }
+  100% {
+    //transform: scale(1.1,1.1);
+    opacity: 100%;
+  }
+}
+
+@-moz-keyframes growLogo { /* FF */
+  0% {
+    opacity: 0
+  }
+  100% {
+    //transform: scale(1.1,1.1);
+    opacity: 100%;
+  }
+}
+@-ms-keyframes growLogo { /* IE10 */
+  0% {
+    opacity: 0
+  }
+  100% {
+    //transform: scale(1.1,1.1);
+    opacity: 100%;
+  }
+}
+@-o-keyframes growLogo { /* Opera */
+  0% {
+    opacity: 0
+  }
+  100% {
+    //transform: scale(1.1,1.1);
+    opacity: 100%;
+  }
+}
+.background-image {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.side-nav-bar {
+  color: var(--dynamic-color);
+  font-family: neueBold, sans-serif;
+
+  a {
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    span {
+      padding-right: 10px;
+    }
+  }
+
+
+}

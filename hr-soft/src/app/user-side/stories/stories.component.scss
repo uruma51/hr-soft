@@ -1,0 +1,22 @@
+.background-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #6b7280;
+  width: 150px;
+  height: 200px;
+  border-radius: 8px;
+  border: 5px solid var(--dynamic-color);
+
+  div {
+    background: rgb(black, 0.5);
+    cursor: pointer;
+  }
+
+  &:hover {
+    span{
+      visibility: visible;
+    }
+  }
+
+}

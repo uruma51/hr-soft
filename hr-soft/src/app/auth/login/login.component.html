@@ -1,7 +1,8 @@
 <section class="w-full flex justify-center items-center  ">
   <div class="relative mt-64 w-1/4 h-[300px] ">
-    <div class=" rounded-4 box-shadow login-container absolute top-0 left-0 right-0 bottom-0 z-10 ">
-      <h3 class="text-left font-neueBold size-4 text-2xl">Login</h3>
+    <div class=" rounded-4 box-shadow login-container absolute top-[-5px] left-[-5px] right-[-5px] bottom-[-5px] z-10 "
+         [ngClass]="{'fadingEffect':userLoggedin}">
+      <h3 class="text-left font-neueBold size-4 text-2xl text-black">Login</h3>
       <div class="w-full h-fit flex flex-col  mt-6">
         <div class=" flex-col   w-full">
           <div class="w-full !h-10 input-field ">
@@ -15,12 +16,14 @@
           </div>
         </div>
         <div class="flex justify-center pt-4">
-          <button class="btn_primary w-[127px] h-[36px]">Login</button>
+          <button class="btn_primary w-[127px] h-[36px]" (click)="login()">Login</button>
         </div>
 
       </div>
     </div>
-    <div class="background-image " [ngStyle]="{'background-image': 'url(assets/images/logos/logo.png)'}"></div>
+<!--        <div class="background-image w-full h-[300px] rounded-4 opacity-60" [ngStyle]="{'background': 'var(&#45;&#45;dynamic-color)'}"></div>-->
+    <div class="background-image"  [ngClass]="{'logoGrowingEffect':userLoggedin}" [ngStyle]="{'background-image': 'url(assets/images/logos/logo.png)'}"></div>
+<!--    <div class="background-image w-full h-[300px] rounded-4" [ngClass]="{'logoGrowingEffect':userLoggedin}" [ngStyle]="{'background-image': 'url(assets/images/logos/defaultLogo.png)'}"></div>-->
   </div>
 
 </section>

@@ -1,7 +1,20 @@
-<header class="h-14 w-full  px-5 flex items-center text-amber-100" [style.backgroundColor]="backgroundColor()">
-  <nav >
-    <ul>
-      <div class="background-image " [ngStyle]="{'background-image': 'url(assets/images/logos/logo.png)'}"></div>
-    </ul>
+<header class="h-14 w-full  px-10 flex items-center text-amber-100 relative z-10"
+        [style.backgroundColor]="backgroundColor()">
+  <nav class="flex justify-between w-full items-center">
+    <div class="background-image " [ngStyle]="{'background-image': 'url(assets/images/logos/logo.png)'}"></div>
+    @if (!activeUrl()?.includes('login')) {
+      <div class="user-profile-container flex items-center text-w font-neueBold cursor-pointer">
+        <span class="material-symbols-outlined  text-[36px]">account_circle</span>
+        <div class="pl-3 flex items-center ">
+          <div class="flex-col">
+            <h1 class="mr-3"> Nika Urumashvili</h1>
+            <h2 class=" text-[13px]">Role: User</h2>
+          </div>
+          <button class="btn_delete mr-3" (click)="logOut()">
+            <span class="material-symbols-outlined">logout</span>
+          </button>
+        </div>
+      </div>
+    }
   </nav>
 </header>

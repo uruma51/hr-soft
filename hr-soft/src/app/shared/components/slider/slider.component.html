@@ -1,0 +1,28 @@
+<div class=" w-full h-72  pt-10">
+
+  <swiper-container
+    loop="true"
+    navigation="true"
+    slides-per-view="3"
+    autoplay="true"
+    speed="1500"
+    pagination="true"
+    spaceBetween="50">
+    <swiper-slide class="!rounded-4">
+      <div class="background-image" [ngStyle]="{'background-image': 'url(assets/images/banner1.jpeg)'}"></div>
+    </swiper-slide>
+
+    <swiper-slide>
+      <div class="background-image" [ngStyle]="{'background-image': 'url(assets/images/banner2.jpg)'}"></div>
+    </swiper-slide>
+
+
+    <swiper-slide>
+      <div class="background-image" [ngStyle]="{'background-image': 'url(assets/images/banner3.webp)'}"></div>
+    </swiper-slide>
+
+    <swiper-slide>
+      <div class="background-image" [ngStyle]="{'background-image': 'url(assets/images/banner4.jpg)'}"></div>
+    </swiper-slide>
+  </swiper-container>
+</div>

@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+//
+//@import 'swiper/scss';
+//@import 'swiper/scss/navigation';
+//@import 'swiper/scss/pagination';
 
 @import "assets/styles/fonts";
 @import "assets/styles/components/merged-components-styles";
@@ -8,7 +12,7 @@
 
 body{
   @apply font-neueNormal;
-  //@apply bg-gray-d3
+  @apply bg-gray-f8
 }
 /* width */
 ::-webkit-scrollbar {
